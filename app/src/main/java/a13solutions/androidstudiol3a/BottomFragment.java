@@ -20,8 +20,7 @@ public class BottomFragment extends Fragment {
 
     private Controller controller;
     private ListView list;
-    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
-            "WebOS","Ubuntu","Windows7","Max OS X"};
+    String[] content = {"GUL","BLÅ","GRÖN","RÖD"};
     public BottomFragment() {
         // Required empty public constructor
     }
@@ -38,7 +37,8 @@ public class BottomFragment extends Fragment {
 
     private void instantiateComponents(View view) {
         list = (ListView) view.findViewById(R.id.lvColors);
-        String[] array = {"a","b","c","d","e","f","g"};
+        list.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
+                android.R.layout.simple_list_item_1 , content));
 
 
     }

@@ -21,6 +21,9 @@ public class MainActivity extends Activity {
 
     private void instantiateController() {
         FragmentManager fm = getFragmentManager();
-        
+        topFragment = (TopFragment) fm.findFragmentById(R.id.fragTop);
+        bottomFragment = (BottomFragment) fm.findFragmentById(R.id.fragBottom);
+        controller = new Controller(topFragment,bottomFragment);
+
     }
 }

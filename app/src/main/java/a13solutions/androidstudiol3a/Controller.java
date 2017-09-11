@@ -14,6 +14,8 @@ class Controller {
     public Controller(TopFragment topFragment, BottomFragment bottomFragment){
         this.topFragment=topFragment;
         this.bottomFragment=bottomFragment;
+        this.topFragment.setController(this);
+        this.bottomFragment.setController(this);
     }
 
     public void changeTVColor(String color) {
@@ -38,5 +40,9 @@ class Controller {
         }
 
         topFragment.changeColor(c);
+    }
+
+    public void changeButtomText(String text){
+        topFragment.changeButtonText(text);
     }
 }

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidStudioL3A</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_color">TextView med färg</string>
+    <string name="color_red">RÖD</string>
+    <string name="color_blue">BLÅ</string>
+    <string name="color_yellow">GUL</string>
+    <string name="color_green">GRÖN</string>
+
+</resources>
